@@ -1,0 +1,154 @@
+.prices {
+    padding: 40px 0 121px;
+}
+
+.prices__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.prices__content__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000;
+}
+
+.prices__items {
+    margin-top: 60px;
+    width: 332px;
+    box-sizing: border-box;
+    padding: 34px 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border: 1px solid #e3e1d5;
+    border-radius: 20px;
+}
+
+.prices__contact {
+    width: 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 39px;
+}
+
+.prices__title {
+    width: 452px;
+    text-align: right;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+
+    color: #000;
+}
+
+.prices__items__button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edf2ec;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-family: "Inika", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000;
+    padding: 0 40px;
+}
+
+.prices__contact__button {
+    width: 162px;
+    height: 50px;
+    font-family: "Inika", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #e06733;
+    border: 1px solid #e06733;
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.4s;
+}
+
+.prices__contact__button:hover {
+    background: #e06733;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.prices__contact__img {
+    width: 151px;
+    height: 174px;
+}
+
+@media screen and (max-width: 932px) {
+    .prices__contact {
+        margin-top: 80px;
+        max-width: 296px;
+    }
+
+    .prices__title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 738px) {
+    .prices {
+        padding: 25px 40px;
+    }
+
+    .prices__container {
+        justify-content: center;
+    }
+
+    .prices__content__title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .prices__contact__img {
+        display: none;
+    }
+
+    .prices__items {
+        width: 224px;
+        margin-top: 40px;
+    }
+
+    .prices__items__button {
+        width: 180px;
+        height: 49px;
+        font-size: 15px;
+    }
+
+    .prices__items__button__img {
+        width: 16px;
+    }
+
+    .prices__contact {
+        justify-content: center;
+        align-items: center;
+        margin-top: 19px;
+    }
+
+    .prices__title {
+        width: 230px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .prices__contact__button {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+}

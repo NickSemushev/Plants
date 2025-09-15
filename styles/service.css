@@ -1,0 +1,141 @@
+.service {
+    background: #edf2ec;
+    padding: 40px 0 121px;
+}
+
+.service__content {
+    display: flex;
+    row-gap: 40px;
+    column-gap: 142px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service__title {
+    width: 306px;
+    font-family: "Inika", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #499a18;
+}
+
+.service__buttons {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.service__button {
+    font-family: "Inika", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #e06733;
+    border: 1px solid #e06733;
+    border-radius: 5px;
+    width: 161px;
+    height: 50px;
+    transition: 0.4s;
+}
+
+.service__button:hover {
+    background: #e06733;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.services {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 55px;
+    flex-wrap: wrap;
+}
+
+.service__item {
+    display: flex;
+    flex-direction: column;
+    filter: blur(2px);
+    transition: 0.4s;
+}
+
+.service__item:hover {
+    filter: none;
+    transition: 0.4s;
+}
+
+.service__item__text {
+    border: 1px solid #e3e1d5;
+    border-radius: 0 0 20px 20px;
+    max-width: 330px;
+    height: 100px;
+}
+
+.service__item__title {
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #e06733;
+}
+
+.service__item__description {
+    margin-top: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: #717171;
+}
+
+@media screen and (max-width: 780px) {
+    .service__item {
+        width: 281px;
+    }
+
+    .service__item__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service__item__description {
+        width: 201px;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .services {
+        justify-content: center;
+        gap: 34px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .service {
+        padding: 30px 0 27px;
+    }
+    .service__title {
+        width: 187px;
+        font-size: 25px;
+    }
+
+    .service__buttons {
+        flex-wrap: wrap;
+        column-gap: 9px;
+        row-gap: 10px;
+    }
+
+    .service__button {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .services {
+        margin-top: 40px;
+    }
+}
