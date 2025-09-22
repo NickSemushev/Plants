@@ -7,6 +7,7 @@ const body = document.querySelector(".body");
 function hendleMenu() {
     burgerMunu.classList.toggle("header__nav__menu-active");
     body.classList.toggle("no-scroll");
+    burgerMunuBtn.classList.toggle("burger__btn__span-active");
     burgerSpans.forEach((span, index) => {
         span.classList.toggle(`burger__btn__span-active-${index + 1}`);
     });
@@ -19,12 +20,6 @@ function closeMenu() {
         span.classList.remove(`burger__btn__span-active-${index + 1}`);
     });
 }
-
-function menuButton() {
-    burgerMunuBtn.classList.toggle("burger__btn__span-active");
-}
-
-burgerMunuBtn.addEventListener("click", menuButton);
 
 burgerMunuBtn.addEventListener("click", hendleMenu);
 
